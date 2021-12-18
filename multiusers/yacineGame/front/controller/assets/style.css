@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background: rgb(54, 97, 205);
+    background: linear-gradient(90deg, rgba(54, 97, 205, 1) 0%, rgba(152, 193, 241, 1) 0%);
+}
+
+.container1 {
+    border-radius: 10px;
+    background: rgb(45, 128, 224);
+    background: linear-gradient(90deg, rgba(45, 128, 224, 1) 0%, rgba(29, 60, 134, 1) 97%);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.buttonColor {
+    background: rgb(62, 137, 224);
+    background: linear-gradient(90deg, rgba(62, 137, 224, 1) 0%, rgba(46, 75, 143, 1) 97%);
+}
+
+.draggable {
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgb(54, 97, 205);
+    background: linear-gradient(90deg, rgba(54, 97, 205, 1) 0%, rgba(40, 115, 203, 1) 0%);
+    border: 3px solid black;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}

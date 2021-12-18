@@ -1,0 +1,22 @@
+<?php 
+
+class DB 
+{
+    private $link ;
+    function __construct()
+    {
+        $this->link = mysqli_connect('localhost','root','','db-dove);
+    }
+    public function db_query($query) {
+        $result = mysqli_query($this->link,$query);
+        return $result;
+
+    }
+    public function db_fetch_assoc($result) {
+        $row = mysqli_fetch_assoc($result);
+        return $row;
+
+    }
+}
+
+?>
